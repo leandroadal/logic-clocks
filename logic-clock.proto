@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Request {
+  int32 logical_time = 1;
+}
+
+message Response {
+  int32 logical_time = 1;
+}
+
+service LogicalTime {
+  rpc update_time_logical(Request) returns (Response) {}
+}
