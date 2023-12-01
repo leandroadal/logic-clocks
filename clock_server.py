@@ -73,10 +73,10 @@ def get_stubs(port, peers):
 
 
 def random_request(logic, stubs, amount):
-    """ Faz uma requisição a um peer aleatorio """
+    """ Faz uma requisição a um peer aleatório """
     for i in range(amount):
         try:
-            random_server = random.choice(list(stubs.items()))  # Escolhe um peer aleatorio
+            random_server = random.choice(list(stubs.items()))  # Escolhe um peer aleatório
             port, stub = random_server
             ran = random.randint(3, 5)
             time.sleep(ran)  # Para visualizar melhor a troca de mensagem entre os pares
